@@ -58,11 +58,13 @@ button,input,select{font:inherit}.shell{width:min(100% - 2rem,78rem);margin-inli
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 1rem;
   width: fit-content;
   text-decoration: none;
 }
+
 .nav-brand__profile {
+  position: relative;
+  z-index: 1;
   width: 5.5rem;
   aspect-ratio: 1;
   flex: 0 0 auto;
@@ -72,8 +74,11 @@ button,input,select{font:inherit}.shell{width:min(100% - 2rem,78rem);margin-inli
 }
 
 .nav-brand__signature {
-  width: min(12rem, 48vw);
-  max-height: 5.5rem;
+  position: relative;
+  z-index: 2;
+  width: min(13rem, 52vw);
+  max-height: 6rem;
+  margin-left: -1.1rem;
   object-fit: contain;
   object-position: left center;
 }
@@ -547,12 +552,13 @@ code{font-family:'SFMono-Regular',Consolas,monospace}
 .footer-brand a {
   display: flex;
   align-items: center;
-  gap: 1rem;
   width: fit-content;
   text-decoration: none;
 }
 
 .footer-brand img:first-child {
+  position: relative;
+  z-index: 1;
   width: 5rem;
   aspect-ratio: 1;
   flex: 0 0 auto;
@@ -562,8 +568,11 @@ code{font-family:'SFMono-Regular',Consolas,monospace}
 }
 
 .footer-brand img:last-child {
-  width: min(16rem, 55vw);
-  max-height: 5rem;
+  position: relative;
+  z-index: 2;
+  width: min(16rem, 58vw);
+  max-height: 6rem;
+  margin-left: -1rem;
   object-fit: contain;
   object-position: left center;
 }
@@ -657,19 +666,21 @@ code{font-family:'SFMono-Regular',Consolas,monospace}
     overflow:visible;
     background:transparent;
   }
-  .nav-brand{
-    display:flex;
-    align-items:center;
-    gap:.85rem;
-    min-width:max-content;
-  }
-  .nav-brand__profile{
-    width:3.25rem;
-  }
-  .nav-brand__signature{
-    width:9.5rem;
-    max-height:2.8rem;
-  }
+.nav-brand {
+  display: flex;
+  align-items: center;
+  min-width: max-content;
+}
+
+.nav-brand__profile {
+  width: 3.25rem;
+}
+
+.nav-brand__signature {
+  width: 10.5rem;
+  max-height: 3.4rem;
+  margin-left: -0.75rem;
+}
   .nav-links{
     display:flex;
     align-items:center;
