@@ -155,11 +155,13 @@ button,input,select{font:inherit}.shell{width:min(100% - 2rem,78rem);margin-inli
   color:#fff;
   backdrop-filter:blur(10px);
 }
-#design .gallery-grid {
+#design .gallery-grid,
+#living-system .horizon-feature-grid {
   perspective: 1200px;
 }
 
-.has-card-reveals #design .media-card {
+.has-card-reveals #design .media-card,
+.has-card-reveals #living-system .horizon-feature-grid article {
   opacity: 0;
   transform:
     rotateY(85deg)
@@ -172,7 +174,8 @@ button,input,select{font:inherit}.shell{width:min(100% - 2rem,78rem);margin-inli
     transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.has-card-reveals #design .media-card.is-revealed {
+.has-card-reveals #design .media-card.is-revealed,
+.has-card-reveals #living-system .horizon-feature-grid article.is-revealed {
   opacity: 1;
   transform:
     rotateY(0deg)
@@ -180,27 +183,33 @@ button,input,select{font:inherit}.shell{width:min(100% - 2rem,78rem);margin-inli
     scale(1);
 }
 
-.has-card-reveals #design .media-card:nth-child(1) {
+.has-card-reveals #design .media-card:nth-child(1),
+.has-card-reveals #living-system .horizon-feature-grid article:nth-child(1) {
   transition-delay: 0ms;
 }
 
-.has-card-reveals #design .media-card:nth-child(2) {
+.has-card-reveals #design .media-card:nth-child(2),
+.has-card-reveals #living-system .horizon-feature-grid article:nth-child(2) {
   transition-delay: 100ms;
 }
 
-.has-card-reveals #design .media-card:nth-child(3) {
+.has-card-reveals #design .media-card:nth-child(3),
+.has-card-reveals #living-system .horizon-feature-grid article:nth-child(3) {
   transition-delay: 200ms;
 }
 
-.has-card-reveals #design .media-card:nth-child(4) {
+.has-card-reveals #design .media-card:nth-child(4),
+.has-card-reveals #living-system .horizon-feature-grid article:nth-child(4) {
   transition-delay: 300ms;
 }
 
-.has-card-reveals #design .media-card:nth-child(5) {
+.has-card-reveals #design .media-card:nth-child(5),
+.has-card-reveals #living-system .horizon-feature-grid article:nth-child(5) {
   transition-delay: 400ms;
 }
 
-.has-card-reveals #design .media-card:nth-child(6) {
+.has-card-reveals #design .media-card:nth-child(6),
+.has-card-reveals #living-system .horizon-feature-grid article:nth-child(6) {
   transition-delay: 500ms;
 }
 
