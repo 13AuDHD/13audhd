@@ -446,8 +446,8 @@ code{font-family:'SFMono-Regular',Consolas,monospace}
 }
 
 .footer-brand img:last-child {
-  width: min(13rem, 55vw);
-  max-height: 4rem;
+  width: min(16rem, 55vw);
+  max-height: 5rem;
   object-fit: contain;
   object-position: left center;
 }
