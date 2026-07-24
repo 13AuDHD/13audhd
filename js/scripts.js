@@ -341,8 +341,11 @@ function initializeParallax() {
   updateParallax();
 }
 
-function initializeDesignCardReveals() {
-  const cards = $$("#design .media-card");
+function initializeCardReveals() {
+  const cards = $$(
+    "#design .media-card, " +
+    "#living-system .horizon-feature-grid article"
+  );
 
   if (!cards.length) {
     return;
@@ -352,6 +355,10 @@ function initializeDesignCardReveals() {
     "(prefers-reduced-motion: reduce)"
   ).matches;
 
+  document.documentElement.classList.add(
+    "has-card-reveals"
+  );
+
   if (reduceMotion) {
     cards.forEach((card) => {
       card.classList.add("is-revealed");
@@ -359,10 +366,6 @@ function initializeDesignCardReveals() {
 
     return;
   }
-
-  document.documentElement.classList.add(
-    "has-card-reveals"
-  );
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -398,7 +401,7 @@ async function initializeSite() {
   initializeStatistics();
   initializeBlogFilters();
   initializeParallax();
-  initializeDesignCardReveals();
+  initializeCardReveals();
 }
 
 initializeSite();
