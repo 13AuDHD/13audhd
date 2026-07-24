@@ -737,9 +737,10 @@ code{font-family:'SFMono-Regular',Consolas,monospace}
     animation-iteration-count:1!important;
     transition-duration:.01ms!important;
   }
-  .has-card-reveals #design .media-card {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
+.has-card-reveals #design .media-card,
+.has-card-reveals #living-system .horizon-feature-grid article {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
 }
