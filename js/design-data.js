@@ -58,7 +58,7 @@ window.DESIGN_LIBRARY = [
     description: "A visual identity connecting neurodivergence, travel, and life outside."
   },
   {
-    src: "img/design/design-05.jpeg",
+    src: "img/design/design-05.png",
     thumb: "img/design/thumbs/design-05.jpeg",
     alt: "Thirteen Labs identity concept",
     title: "13labs",
@@ -68,7 +68,7 @@ window.DESIGN_LIBRARY = [
     description: "An experimental umbrella identity for ideas, tools, and digital projects."
   },
   {
-    src: "img/design/design-06.jpeg",
+    src: "img/design/design-06.png",
     thumb: "img/design/thumbs/design-06.jpeg",
     alt: "National parks checklist poster",
     title: "National Parks Checklist",
@@ -78,7 +78,7 @@ window.DESIGN_LIBRARY = [
     description: "A printable checklist designed to track visits across the national park system."
   },
   {
-    src: "img/design/design-07.jpeg",
+    src: "img/design/design-07.png",
     thumb: "img/design/thumbs/design-07.jpeg",
     alt: "Colorado state parks checklist",
     title: "Colorado State Parks",
