@@ -47,7 +47,6 @@ async function loadIncludes() {
 function initializeMenu() {
   const body = document.body;
   const toggle = $("[data-menu-toggle]");
-  const closeButton = $("[data-menu-close]");
 
   function setMenu(open) {
     body.classList.toggle("menu-open", open);
@@ -56,7 +55,36 @@ function initializeMenu() {
       "aria-expanded",
       String(open)
     );
+
+    toggle?.setAttribute(
+      "aria-label",
+      open ? "Close menu" : "Open menu"
+    );
   }
+
+  toggle?.addEventListener("click", () => {
+    const isOpen =
+      body.classList.contains("menu-open");
+
+    setMenu(!isOpen);
+  });
+
+  $$(".nav-links a").forEach((link) => {
+    link.addEventListener("click", () => {
+      setMenu(false);
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (
+      event.key === "Escape" &&
+      body.classList.contains("menu-open")
+    ) {
+      setMenu(false);
+      toggle?.focus();
+    }
+  });
+}
 
   toggle?.addEventListener("click", () => {
     setMenu(!body.classList.contains("menu-open"));
