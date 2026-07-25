@@ -37,21 +37,36 @@ let state = {
   perPage: 12,
   page: 1
 };
-  
-  function normalizePhoto(photo, index) {
-    return {
-      src: String(photo.src || ""),
-      thumb: String(photo.thumb || photo.src || ""),
-      alt: String(photo.alt || photo.title || `Photograph ${index + 1}`),
-      title: String(photo.title || `Photograph ${index + 1}`),
-      year: Number(photo.year) || "",
-      date: String(photo.date || ""),
-      tags: Array.isArray(photo.tags)
-        ? photo.tags.map(String)
-        : [],
-      description: String(photo.description || ""),
-      originalIndex: index    };
-  }
+
+let filteredPhotos = [];
+let activeModalIndex = -1;
+
+function normalizePhoto(photo, index) {
+  return {
+    src: String(photo.src || ""),
+    thumb: String(
+      photo.thumb || photo.src || ""
+    ),
+    alt: String(
+      photo.alt ||
+      photo.title ||
+      `Photograph ${index + 1}`
+    ),
+    title: String(
+      photo.title ||
+      `Photograph ${index + 1}`
+    ),
+    year: Number(photo.year) || "",
+    date: String(photo.date || ""),
+    tags: Array.isArray(photo.tags)
+      ? photo.tags.map(String)
+      : [],
+    description: String(
+      photo.description || ""
+    ),
+    originalIndex: index
+  };
+}
 
   const photos = library.map(normalizePhoto).filter((photo) => photo.src);
 
