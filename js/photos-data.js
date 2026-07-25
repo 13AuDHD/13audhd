@@ -16,8 +16,8 @@
 
 window.PHOTO_LIBRARY = [
   {
-    src: "img/photos/photo-001.jpg",
-    thumb: "img/photos/thumbs/photo-001.jpg",
+    src: "img/photos/photo-001.jpeg",
+    thumb: "img/photos/thumbs/photo-001.jpeg",
     alt: "A mountain road beneath gathering clouds",
     title: "Weather Moving In",
     year: 2026,
@@ -25,8 +25,8 @@ window.PHOTO_LIBRARY = [
     description: "A quiet road in the San Juan Mountains just before the weather changed."
   },
   {
-    src: "img/photos/photo-002.jpg",
-    thumb: "img/photos/thumbs/photo-002.jpg",
+    src: "img/photos/photo-002.jpeg",
+    thumb: "img/photos/thumbs/photo-002.jpeg",
     alt: "Horizon parked beside a forest road",
     title: "Camp for the Night",
     year: 2026,
@@ -34,8 +34,8 @@ window.PHOTO_LIBRARY = [
     description: "A temporary home among the trees."
   },
   {
-    src: "img/photos/photo-003.jpg",
-    thumb: "img/photos/thumbs/photo-003.jpg",
+    src: "img/photos/photo-003.jpeg",
+    thumb: "img/photos/thumbs/photo-003.jpeg",
     alt: "Morning light crossing a mountain ridge",
     title: "First Light",
     year: 2026,
@@ -43,8 +43,8 @@ window.PHOTO_LIBRARY = [
     description: "Early light reaching across the western slope."
   },
   {
-    src: "img/photos/photo-004.jpg",
-    thumb: "img/photos/thumbs/photo-004.jpg",
+    src: "img/photos/photo-004.jpeg",
+    thumb: "img/photos/thumbs/photo-004.jpeg",
     alt: "A fox standing near the edge of a road",
     title: "Scout",
     year: 2026,
@@ -61,8 +61,8 @@ window.PHOTO_LIBRARY = [
     description: "A curtain of rain moving through the distance."
   },
   {
-    src: "img/photos/photo-006.jpg",
-    thumb: "img/photos/thumbs/photo-006.jpg",
+    src: "img/photos/photo-006.jpeg",
+    thumb: "img/photos/thumbs/photo-006.jpeg",
     alt: "A narrow dirt road through evergreen trees",
     title: "The Long Way",
     year: 2025,
@@ -70,8 +70,8 @@ window.PHOTO_LIBRARY = [
     description: "The slower route usually has the better view."
   },
   {
-    src: "img/photos/photo-007.jpg",
-    thumb: "img/photos/thumbs/photo-007.jpg",
+    src: "img/photos/photo-007.jpeg",
+    thumb: "img/photos/thumbs/photo-007.jpeg",
     alt: "A camp chair overlooking a wide landscape",
     title: "No Urgent Destination",
     year: 2025,
@@ -79,8 +79,8 @@ window.PHOTO_LIBRARY = [
     description: "A place to stop without needing a reason."
   },
   {
-    src: "img/photos/photo-008.jpg",
-    thumb: "img/photos/thumbs/photo-008.jpg",
+    src: "img/photos/photo-008.jpeg",
+    thumb: "img/photos/thumbs/photo-008.jpeg",
     alt: "Snow resting on a dark mountain forest",
     title: "Winter Line",
     year: 2025,
@@ -88,8 +88,8 @@ window.PHOTO_LIBRARY = [
     description: "Snow separating the ridgeline from the trees."
   },
   {
-    src: "img/photos/photo-009.jpg",
-    thumb: "img/photos/thumbs/photo-009.jpg",
+    src: "img/photos/photo-009.jpeg",
+    thumb: "img/photos/thumbs/photo-009.jpeg",
     alt: "Clouds glowing above the desert at sunset",
     title: "After the Heat",
     year: 2024,
@@ -97,8 +97,8 @@ window.PHOTO_LIBRARY = [
     description: "The sky changing color after the ground began to cool."
   },
   {
-    src: "img/photos/photo-010.jpg",
-    thumb: "img/photos/thumbs/photo-010.jpg",
+    src: "img/photos/photo-010.jpeg",
+    thumb: "img/photos/thumbs/photo-010.jpeg",
     alt: "Horizon traveling along a rocky trail",
     title: "Beyond Pavement",
     year: 2024,
@@ -106,8 +106,8 @@ window.PHOTO_LIBRARY = [
     description: "A road rough enough to make the destination feel earned."
   },
   {
-    src: "img/photos/photo-011.jpg",
-    thumb: "img/photos/thumbs/photo-011.jpg",
+    src: "img/photos/photo-011.jpeg",
+    thumb: "img/photos/thumbs/photo-011.jpeg",
     alt: "A small flower growing beside a trail",
     title: "Trailside",
     year: 2024,
@@ -115,8 +115,8 @@ window.PHOTO_LIBRARY = [
     description: "Something small enough to miss while moving too quickly."
   },
   {
-    src: "img/photos/photo-012.jpg",
-    thumb: "img/photos/thumbs/photo-012.jpg",
+    src: "img/photos/photo-012.jpeg",
+    thumb: "img/photos/thumbs/photo-012.jpeg",
     alt: "Stars visible above a dark campsite",
     title: "Camp After Dark",
     year: 2024,
