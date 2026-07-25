@@ -28,8 +28,8 @@ window.DESIGN_LIBRARY = [
     description: "A complete identity built around a fox, mountain landscape, and forest imagery."
   },
   {
-    src: "img/design/design-02.jpeg",
-    thumb: "img/design/thumbs/design-02.png",
+    src: "img/design/design-02.png",
+    thumb: "img/design/thumbs/design-02.jpeg",
     alt: "Thirteen Nebula signature wordmark",
     title: "Thirteen Nebula Wordmark",
     date: "2026-07-10",
