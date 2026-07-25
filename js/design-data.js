@@ -70,12 +70,12 @@ window.DESIGN_LIBRARY = [
   {
     src: "img/design/design-06.png",
     thumb: "img/design/thumbs/design-06.jpeg",
-    alt: "National parks checklist poster",
-    title: "National Parks Checklist",
+    alt: "Telluride Mushroom Festival logo t-shirt design",
+    title: "Telluride Mushroom Festival",
     date: "2026-05-16",
     year: 2026,
-    tags: ["Print", "Poster", "Travel"],
-    description: "A printable checklist designed to track visits across the national park system."
+    tags: ["Branding", "Logo", "T-Shirt"],
+    description: "A logo and t-shirt design concept for the 2026 Telluride Mushroom Festival."
   },
   {
     src: "img/design/design-07.png",
@@ -90,12 +90,12 @@ window.DESIGN_LIBRARY = [
   {
     src: "img/design/design-08.jpeg",
     thumb: "img/design/thumbs/design-08.jpeg",
-    alt: "You Live in That podcast concept",
-    title: "You Live in That?",
+    alt: "13Labs, LLC T-shirt Graphic Design",
+    title: "13Labs, LLC Design Concept",
     date: "2026-03-08",
     year: 2026,
-    tags: ["Podcast", "Branding", "Editorial"],
-    description: "A concept identity for stories about unconventional homes and mobile living."
+    tags: ["T-Shirt", "Branding", "Logo"],
+    description: "A concept identity for 13Labs, LLC, a creative ventures company."
   },
   {
     src: "img/design/design-09.jpeg",
