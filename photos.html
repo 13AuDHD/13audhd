@@ -1,215 +1,107 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Photography by Thirteen Nebula. Mountains, roads, weather, wildlife, camps, and quieter moments from life outside.">
+  <title>Photography | Thirteen Nebula</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/photos.css">
+  <script src="js/scripts.js" defer></script>
+  <script src="js/photos-data.js" defer></script>
+  <script src="js/photos.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div data-include="includes/header.htm"></div>
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    >
-
-    <meta
-      name="description"
-      content="Personal website of Thirteen Nebula."
-    >
-
-    <title>Photography | Thirteen Nebula</title>
-
-    <link
-      rel="stylesheet"
-      href="css/styles.css"
-    >
-
-    <script
-      src="js/scripts.js"
-      defer
-    ></script>
-  </head>
-
-  <body>
-    <a class="skip-link" href="#main">
-      Skip to content
-    </a>
-
-    <div data-include="includes/header.htm"></div>
-
-    <main id="main">
-<header class="page-hero page-hero--image">
-  <img
-    class="page-hero__media"
-    src="img/photos-hero.jpg"
-    alt="Mountain landscape photographed by Thirteen Nebula"
-  >
-
-  <div class="shell page-hero__copy">
-    <p class="eyebrow">Photography</p>
-
-    <h1 class="display">
-      Places worth stopping for.
-    </h1>
-
-    <p class="lede">
-      Mountains, roads, weather, animals, camps, and the quieter parts
-      of life outside.
-    </p>
-  </div>
-</header>
-
-      <div class="section">
-        <div class="shell">
-          <section class="archive-group">
-            <h2>Recent work</h2>
-
-            <p class="folder-note">
-              This is a visual folder. Rename it and replace its images as
-              your archive grows.
-            </p>
-
-            <div class="gallery-grid">
-              <article class="media-card">
-                <img
-                  src="img/photos/photos-01.svg"
-                  alt="Photography placeholder 1"
-                  loading="lazy"
-                >
-
-                <div class="media-card__label">
-                  <span>Recent work</span>
-                  <span>01</span>
-                </div>
-              </article>
-
-              <article class="media-card">
-                <img
-                  src="img/photos/photos-02.svg"
-                  alt="Photography placeholder 2"
-                  loading="lazy"
-                >
-
-                <div class="media-card__label">
-                  <span>Recent work</span>
-                  <span>02</span>
-                </div>
-              </article>
-
-              <article class="media-card">
-                <img
-                  src="img/photos/photos-03.svg"
-                  alt="Photography placeholder 3"
-                  loading="lazy"
-                >
-
-                <div class="media-card__label">
-                  <span>Recent work</span>
-                  <span>03</span>
-                </div>
-              </article>
-            </div>
-          </section>
-
-          <section class="archive-group">
-            <h2>From the road</h2>
-
-            <p class="folder-note">
-              This is a visual folder. Rename it and replace its images as
-              your archive grows.
-            </p>
-
-            <div class="gallery-grid">
-              <article class="media-card">
-                <img
-                  src="img/photos/photos-04.svg"
-                  alt="Photography placeholder 4"
-                  loading="lazy"
-                >
-
-                <div class="media-card__label">
-                  <span>From the road</span>
-                  <span>04</span>
-                </div>
-              </article>
-
-              <article class="media-card">
-                <img
-                  src="img/photos/photos-05.svg"
-                  alt="Photography placeholder 5"
-                  loading="lazy"
-                >
-
-                <div class="media-card__label">
-                  <span>From the road</span>
-                  <span>05</span>
-                </div>
-              </article>
-
-              <article class="media-card">
-                <img
-                  src="img/photos/photos-06.svg"
-                  alt="Photography placeholder 6"
-                  loading="lazy"
-                >
-
-                <div class="media-card__label">
-                  <span>From the road</span>
-                  <span>06</span>
-                </div>
-              </article>
-            </div>
-          </section>
-
-          <section class="archive-group">
-            <h2>Archive studies</h2>
-
-            <p class="folder-note">
-              This is a visual folder. Rename it and replace its images as
-              your archive grows.
-            </p>
-
-            <div class="gallery-grid">
-              <article class="media-card">
-                <img
-                  src="img/photos/photos-07.svg"
-                  alt="Photography placeholder 7"
-                  loading="lazy"
-                >
-
-                <div class="media-card__label">
-                  <span>Archive studies</span>
-                  <span>07</span>
-                </div>
-              </article>
-
-              <article class="media-card">
-                <img
-                  src="img/photos/photos-08.svg"
-                  alt="Photography placeholder 8"
-                  loading="lazy"
-                >
-
-                <div class="media-card__label">
-                  <span>Archive studies</span>
-                  <span>08</span>
-                </div>
-              </article>
-
-              <article class="media-card">
-                <img
-                  src="img/photos/photos-09.svg"
-                  alt="Photography placeholder 9"
-                  loading="lazy"
-                >
-
-                <div class="media-card__label">
-                  <span>Archive studies</span>
-                  <span>09</span>
-                </div>
-              </article>
-            </div>
-          </section>
-        </div>
+  <main id="main">
+    <header class="page-hero page-hero--image">
+      <img class="page-hero__media" src="img/photos-hero.jpg" alt="Mountain landscape photographed by Thirteen Nebula">
+      <div class="shell page-hero__copy">
+        <p class="eyebrow">Photography</p>
+        <h1 class="display">Places worth stopping for.</h1>
+        <p class="lede">Mountains, roads, weather, wildlife, camps, and the quieter parts of life outside.</p>
       </div>
-    </main>
+    </header>
 
-    <div data-include="includes/footer.htm"></div>
-  </body>
+    <section class="section photo-archive">
+      <div class="shell">
+        <div class="photo-archive__intro">
+          <div>
+            <p class="eyebrow">The archive</p>
+            <h2 class="section-title">A growing visual field guide.</h2>
+          </div>
+          <p class="lede">Browse the complete photography archive. Filter by subject, year, or the number of photographs shown on each page.</p>
+        </div>
+
+        <form class="photo-controls" data-photo-controls aria-label="Photography filters">
+          <div class="field">
+            <label for="photo-tag">Tag</label>
+            <select id="photo-tag" name="tag"><option value="">All tags</option></select>
+          </div>
+          <div class="field">
+            <label for="photo-year">Year</label>
+            <select id="photo-year" name="year"><option value="">All years</option></select>
+          </div>
+          <div class="field">
+            <label for="photo-per-page">Per page</label>
+            <select id="photo-per-page" name="perPage">
+              <option value="6">6</option>
+              <option value="12" selected>12</option>
+              <option value="24">24</option>
+              <option value="48">48</option>
+              <option value="96">96</option>
+            </select>
+          </div>
+          <button class="button photo-controls__reset" type="button" data-photo-reset>
+            Reset filters <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+          </button>
+        </form>
+
+        <div class="photo-results-bar" aria-live="polite">
+          <p data-photo-summary>Loading photographs…</p>
+          <p data-photo-page-summary></p>
+        </div>
+
+        <div class="photo-grid" data-photo-grid aria-live="polite"></div>
+
+        <div class="photo-empty" data-photo-empty hidden>
+          <i class="fa-regular fa-images" aria-hidden="true"></i>
+          <h3>No photographs found.</h3>
+          <p>Try choosing a different tag or year.</p>
+        </div>
+
+        <nav class="photo-pagination" data-photo-pagination aria-label="Photography pages"></nav>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="includes/footer.htm"></div>
+
+  <dialog class="photo-modal" data-photo-modal aria-labelledby="photo-modal-title">
+    <div class="photo-modal__frame">
+      <button class="photo-modal__close" type="button" data-photo-modal-close aria-label="Close photograph">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+      <button class="photo-modal__nav photo-modal__nav--previous" type="button" data-photo-previous aria-label="Previous photograph">
+        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+      </button>
+      <figure class="photo-modal__figure">
+        <img class="photo-modal__image" data-photo-modal-image src="" alt="">
+        <figcaption class="photo-modal__caption">
+          <div>
+            <p class="eyebrow" data-photo-modal-meta></p>
+            <h2 id="photo-modal-title" data-photo-modal-title></h2>
+            <p data-photo-modal-description></p>
+          </div>
+          <div class="photo-modal__tags" data-photo-modal-tags></div>
+        </figcaption>
+      </figure>
+      <button class="photo-modal__nav photo-modal__nav--next" type="button" data-photo-next aria-label="Next photograph">
+        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+      </button>
+    </div>
+  </dialog>
+</body>
 </html>
