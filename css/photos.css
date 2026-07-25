@@ -50,7 +50,15 @@ body.photo-modal-open{overflow:hidden}
 @media(min-width:600px){.photo-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}}
 @media(min-width:760px){
   .photo-archive__intro{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:end}
-  .photo-controls{grid-template-columns:minmax(10rem,1fr) minmax(8rem,.75fr) minmax(8rem,.75fr) auto;align-items:end}
+.photo-controls {
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  align-items: end;
+}
+
+.photo-controls__reset {
+  grid-column: 1 / -1;
+}
   .photo-results-bar{flex-direction:row;justify-content:space-between}
   .photo-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
   .photo-modal__caption{grid-template-columns:minmax(0,1fr) auto;align-items:end}
@@ -58,5 +66,18 @@ body.photo-modal-open{overflow:hidden}
   .photo-modal__nav--previous{left:1.5rem}
   .photo-modal__nav--next{right:1.5rem}
 }
-@media(min-width:1150px){.photo-grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+@media(min-width:1150px){.photo-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+                          .photo-controls {
+    grid-template-columns:
+      minmax(10rem, 1fr)
+      minmax(8rem, 0.75fr)
+      minmax(9rem, 0.85fr)
+      minmax(8rem, 0.75fr)
+      auto;
+  }
+  .photo-controls__reset {
+    grid-column: auto;
+  }
+
+}
 @media(prefers-reduced-motion:reduce){.photo-tile img,.photo-tile::after,.photo-tile__caption{transition:none}}
