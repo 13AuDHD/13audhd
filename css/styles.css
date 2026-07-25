@@ -281,11 +281,11 @@ button,input,select{font:inherit}.shell{width:min(100% - 2rem,78rem);margin-inli
 }
 .post-signoff i {
   flex: 0 0 auto;
-  font-size: 1.25rem;
+  font-size: 2.25rem;
 }
 .article-body .post-signature {
   width: min(13rem, 45vw);
-  margin: 0;
+  margin-left: -2rem;
   border-radius: 0;
 }
 .page-hero {
