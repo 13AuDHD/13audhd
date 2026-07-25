@@ -52,8 +52,8 @@ window.PHOTO_LIBRARY = [
     description: "The roadside encounter that stayed with me."
   },
   {
-    src: "img/photos/photo-005.jpg",
-    thumb: "img/photos/thumbs/photo-005.jpg",
+    src: "img/photos/photo-005.jpeg",
+    thumb: "img/photos/thumbs/photo-005.jpeg",
     alt: "Rain falling across distant mountains",
     title: "Across the Valley",
     year: 2025,
