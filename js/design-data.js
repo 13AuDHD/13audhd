@@ -60,12 +60,12 @@ window.DESIGN_LIBRARY = [
   {
     src: "img/design/design-05.png",
     thumb: "img/design/thumbs/design-05.jpeg",
-    alt: "Thirteen Labs identity concept",
-    title: "13labs",
+    alt: "Brain Rot Media identity concept",
+    title: "Brain Rot Media",
     date: "2025-06-13",
     year: 2025,
     tags: ["Branding", "Logo", "Technology"],
-    description: "An experimental umbrella identity for ideas, tools, and digital projects."
+    description: "An experimental identity for ideas, tools, and digital projects."
   },
   {
     src: "img/design/design-06.png",
