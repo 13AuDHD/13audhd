@@ -51,9 +51,60 @@ button,input,select{font:inherit}.shell{width:min(100% - 2rem,78rem);margin-inli
                    cursor:pointer}
 .button:hover,.button:focus-visible,.text-link:hover,.text-link:focus-visible{border-color:var(--accent);color:var(--accent)}
 .site-header{position:fixed;inset:auto 1rem 1rem auto;z-index:100}
-.menu-toggle{width:4.3rem;height:4.3rem;border:1px solid rgba(255,255,255,.6);border-radius:50%;padding:.22rem;background:#0a0f1b;box-shadow:var(--shadow);cursor:pointer}
-.menu-toggle img{width:100%;height:100%;border-radius:50%;object-fit:cover}
-.nav-panel{position:fixed;inset:0;display:flex;flex-direction:column;padding:clamp(2rem,8vw,5rem);background:var(--bg);transform:translateY(105%);transition:transform .35s ease;overflow:auto}
+.menu-toggle {
+  position: relative;
+  z-index: 102;
+  display: grid;
+  place-content: center;
+  gap: 0.38rem;
+  width: 4.3rem;
+  height: 4.3rem;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  background: #0a0f1b;
+  color: #f4f1ea;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.menu-toggle__bar {
+  display: block;
+  width: 1.65rem;
+  height: 0.14rem;
+  border-radius: 999px;
+  background: currentColor;
+  transform-origin: center;
+  transition:
+    transform 0.3s ease,
+    opacity 0.2s ease;
+}
+.menu-open .menu-toggle__bar:nth-child(1) {
+  transform: translateY(0.52rem) rotate(45deg);
+}
+
+.menu-open .menu-toggle__bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-open .menu-toggle__bar:nth-child(3) {
+  transform: translateY(-0.52rem) rotate(-45deg);
+}
+.nav-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  padding:
+    clamp(2rem, 8vw, 5rem)
+    clamp(2rem, 8vw, 5rem)
+    7rem;
+  background: var(--bg);
+  transform: translateY(105%);
+  transition: transform 0.35s ease;
+  overflow: auto;
+}
 .menu-open .nav-panel{transform:none}
 .nav-brand {
   display: flex;
@@ -122,12 +173,6 @@ button,input,select{font:inherit}.shell{width:min(100% - 2rem,78rem);margin-inli
 .socials a:hover,
 .socials a:focus-visible {
   color: var(--accent);
-}
-
-.nav-close {
-  position: absolute;
-  right: 1.25rem;
-  top: 1.25rem;
 }
 .socials{display:flex;flex-wrap:wrap;gap:.45rem}
 .nav-close{position:absolute;right:1.25rem;top:1.25rem}
@@ -656,10 +701,9 @@ code{font-family:'SFMono-Regular',Consolas,monospace}
     -webkit-backdrop-filter:blur(18px);
   }
   .signature-h{max-width:800px;}
-  .menu-toggle,
-  .nav-close{
-    display:none;
-  }
+.menu-toggle {
+  display: none;
+}
   .nav-panel{
     position:static;
     inset:auto;
