@@ -49,7 +49,7 @@ window.DESIGN_LIBRARY = [
   },
   {
     src: "img/design/design-04.jpeg",
-    thumb: "img/design/thumbs/design-04.jpeg,
+    thumb: "img/design/thumbs/design-04.jpeg",
     alt: "Autism Overland visual identity concept",
     title: "Autism Overland",
     date: "2026-06-18",
