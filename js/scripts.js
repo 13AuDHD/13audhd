@@ -86,21 +86,6 @@ function initializeMenu() {
   });
 }
 
-  toggle?.addEventListener("click", () => {
-    setMenu(!body.classList.contains("menu-open"));
-  });
-
-  closeButton?.addEventListener("click", () => {
-    setMenu(false);
-  });
-
-  $$(".nav-links a").forEach((link) => {
-    link.addEventListener("click", () => {
-      setMenu(false);
-    });
-  });
-}
-
 function initializeTheme() {
   const root = document.documentElement;
   const themeButtons = $$("[data-theme-toggle]");
