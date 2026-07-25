@@ -142,7 +142,7 @@ window.PHOTO_LIBRARY = [
     thumb: "img/photos/thumbs/photo-012.jpeg",
     alt: "Stars visible above a dark campsite",
     title: "Camp After Dark",
-    date: 2023-03-04",
+    date: "2023-03-04",
     year: 2023,
     tags: ["Night", "Camping", "Stars"],
     description: "The view after every other light disappeared."
