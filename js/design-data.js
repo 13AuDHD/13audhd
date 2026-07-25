@@ -88,7 +88,7 @@ window.DESIGN_LIBRARY = [
     description: "A companion checklist focused on Colorado state parks."
   },
   {
-    src: "img/design/design-08.jpeg",
+    src: "img/design/design-08.png",
     thumb: "img/design/thumbs/design-08.jpeg",
     alt: "13Labs, LLC T-shirt Graphic Design",
     title: "13Labs, LLC Design Concept",
@@ -98,7 +98,7 @@ window.DESIGN_LIBRARY = [
     description: "A concept identity for 13Labs, LLC, a creative ventures company."
   },
   {
-    src: "img/design/design-09.jpeg",
+    src: "img/design/design-09.png",
     thumb: "img/design/thumbs/design-09.jpeg",
     alt: "Early experimental logo study",
     title: "Archive Study No. 1",
