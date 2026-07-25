@@ -18,8 +18,8 @@
 
 window.DESIGN_LIBRARY = [
   {
-    src: "img/design/design-01.svg",
-    thumb: "img/design/design-01.svg",
+    src: "img/design/design-01.jpeg",
+    thumb: "img/design/thumbs/design-01.jpeg",
     alt: "Fox and Timber primary brand mark",
     title: "Fox & Timber",
     date: "2026-07-22",
@@ -28,8 +28,8 @@ window.DESIGN_LIBRARY = [
     description: "A complete identity built around a fox, mountain landscape, and forest imagery."
   },
   {
-    src: "img/design/design-02.svg",
-    thumb: "img/design/design-02.svg",
+    src: "img/design/design-02.jpeg",
+    thumb: "img/design/thumbs/design-02.jpeg",
     alt: "Thirteen Nebula signature wordmark",
     title: "Thirteen Nebula Wordmark",
     date: "2026-07-10",
@@ -38,8 +38,8 @@ window.DESIGN_LIBRARY = [
     description: "A handwritten personal wordmark with a star integrated into the final letter."
   },
   {
-    src: "img/design/design-03.svg",
-    thumb: "img/design/design-03.svg",
+    src: "img/design/design-03.jpeg",
+    thumb: "img/design/thumbs/design-03.jpeg",
     alt: "Orions Beats DJ logo concept",
     title: "Orions Beats",
     date: "2026-07-09",
@@ -48,8 +48,8 @@ window.DESIGN_LIBRARY = [
     description: "A turntable-inspired identity for an electronic music project."
   },
   {
-    src: "img/design/design-04.svg",
-    thumb: "img/design/design-04.svg",
+    src: "img/design/design-04.jpeg",
+    thumb: "img/design/thumbs/design-04.jpeg,
     alt: "Autism Overland visual identity concept",
     title: "Autism Overland",
     date: "2026-06-18",
@@ -58,8 +58,8 @@ window.DESIGN_LIBRARY = [
     description: "A visual identity connecting neurodivergence, travel, and life outside."
   },
   {
-    src: "img/design/design-05.svg",
-    thumb: "img/design/design-05.svg",
+    src: "img/design/design-05.jpeg",
+    thumb: "img/design/thumbs/design-05.jpeg",
     alt: "Thirteen Labs identity concept",
     title: "13labs",
     date: "2025-06-13",
@@ -68,8 +68,8 @@ window.DESIGN_LIBRARY = [
     description: "An experimental umbrella identity for ideas, tools, and digital projects."
   },
   {
-    src: "img/design/design-06.svg",
-    thumb: "img/design/design-06.svg",
+    src: "img/design/design-06.jpeg",
+    thumb: "img/design/thumbs/design-06.jpeg",
     alt: "National parks checklist poster",
     title: "National Parks Checklist",
     date: "2026-05-16",
@@ -78,8 +78,8 @@ window.DESIGN_LIBRARY = [
     description: "A printable checklist designed to track visits across the national park system."
   },
   {
-    src: "img/design/design-07.svg",
-    thumb: "img/design/design-07.svg",
+    src: "img/design/design-07.jpeg",
+    thumb: "img/design/thumbs/design-07.jpeg",
     alt: "Colorado state parks checklist",
     title: "Colorado State Parks",
     date: "2026-05-17",
@@ -88,8 +88,8 @@ window.DESIGN_LIBRARY = [
     description: "A companion checklist focused on Colorado state parks."
   },
   {
-    src: "img/design/design-08.svg",
-    thumb: "img/design/design-08.svg",
+    src: "img/design/design-08.jpeg",
+    thumb: "img/design/thumbs/design-08.jpeg",
     alt: "You Live in That podcast concept",
     title: "You Live in That?",
     date: "2026-03-08",
@@ -98,8 +98,8 @@ window.DESIGN_LIBRARY = [
     description: "A concept identity for stories about unconventional homes and mobile living."
   },
   {
-    src: "img/design/design-09.svg",
-    thumb: "img/design/design-09.svg",
+    src: "img/design/design-09.jpeg",
+    thumb: "img/design/thumbs/design-09.jpeg",
     alt: "Early experimental logo study",
     title: "Archive Study No. 1",
     date: "2025-02-14",
