@@ -277,7 +277,7 @@ button,input,select{font:inherit}.shell{width:min(100% - 2rem,78rem);margin-inli
   display: flex;
   align-items: center;
   gap: 0.35rem;
-  margin-top: -1.25rem;
+  margin-top: -1.75rem;
 }
 .post-signoff i {
   flex: 0 0 auto;
@@ -285,7 +285,7 @@ button,input,select{font:inherit}.shell{width:min(100% - 2rem,78rem);margin-inli
 }
 .article-body .post-signature {
   width: min(13rem, 45vw);
-  margin-left: -2rem;
+  margin: -2rem;
   border-radius: 0;
 }
 .page-hero {
