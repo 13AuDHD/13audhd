@@ -100,11 +100,11 @@ window.DESIGN_LIBRARY = [
   {
     src: "img/design/design-09.png",
     thumb: "img/design/thumbs/design-09.jpeg",
-    alt: "Early experimental logo study",
-    title: "Archive Study No. 1",
+    alt: "I wish I was a cat t-shirt",
+    title: "Meow Meow T-Shirt",
     date: "2025-02-14",
     year: 2025,
-    tags: ["Experiment", "Logo", "Archive"],
+    tags: ["Physical", "Design", "T-Shirt"],
     description: "An early visual study preserved as part of the design archive."
   }
 ];
