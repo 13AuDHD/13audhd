@@ -29,7 +29,7 @@ window.DESIGN_LIBRARY = [
   },
   {
     src: "img/design/design-02.jpeg",
-    thumb: "img/design/thumbs/design-02.jpeg",
+    thumb: "img/design/thumbs/design-02.png",
     alt: "Thirteen Nebula signature wordmark",
     title: "Thirteen Nebula Wordmark",
     date: "2026-07-10",
