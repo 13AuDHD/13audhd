@@ -48,7 +48,7 @@ window.DESIGN_LIBRARY = [
     description: "A turntable-inspired identity for an electronic music project."
   },
   {
-    src: "img/design/design-04.jpeg",
+    src: "img/design/design-04.png",
     thumb: "img/design/thumbs/design-04.jpeg",
     alt: "Autism Overland visual identity concept",
     title: "Autism Overland",
