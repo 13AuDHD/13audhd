@@ -35,30 +35,65 @@
           <p class="lede">Browse the complete photography archive. Filter by subject, year, or the number of photographs shown on each page.</p>
         </div>
 
-        <form class="photo-controls" data-photo-controls aria-label="Photography filters">
-          <div class="field">
-            <label for="photo-tag">Tag</label>
-            <select id="photo-tag" name="tag"><option value="">All tags</option></select>
-          </div>
-          <div class="field">
-            <label for="photo-year">Year</label>
-            <select id="photo-year" name="year"><option value="">All years</option></select>
-          </div>
-          <div class="field">
-            <label for="photo-per-page">Per page</label>
-            <select id="photo-per-page" name="perPage">
-              <option value="6">6</option>
-              <option value="12" selected>12</option>
-              <option value="24">24</option>
-              <option value="48">48</option>
-              <option value="96">96</option>
-            </select>
-          </div>
-          <button class="button photo-controls__reset" type="button" data-photo-reset>
-            Reset filters <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
-          </button>
-        </form>
+<form
+  class="photo-controls"
+  data-photo-controls
+  aria-label="Photography filters"
+>
+  <div class="field">
+    <label for="photo-tag">Tag</label>
 
+    <select id="photo-tag" name="tag">
+      <option value="">All tags</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="photo-year">Year</label>
+
+    <select id="photo-year" name="year">
+      <option value="">All years</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="photo-arrange">Arrange</label>
+
+    <select id="photo-arrange" name="arrange">
+      <option value="newest" selected>
+        Newest first
+      </option>
+
+      <option value="oldest">
+        Oldest first
+      </option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="photo-per-page">Per page</label>
+
+    <select id="photo-per-page" name="perPage">
+      <option value="6">6</option>
+      <option value="12" selected>12</option>
+      <option value="24">24</option>
+      <option value="48">48</option>
+      <option value="96">96</option>
+    </select>
+  </div>
+
+  <button
+    class="button photo-controls__reset"
+    type="button"
+    data-photo-reset
+  >
+    Reset filters
+    <i
+      class="fa-solid fa-rotate-left"
+      aria-hidden="true"
+    ></i>
+  </button>
+</form>
         <div class="photo-results-bar" aria-live="polite">
           <p data-photo-summary>Loading photographs…</p>
           <p data-photo-page-summary></p>
