@@ -25,14 +25,19 @@
 
   if (!controls || !grid || !pagination) return;
 
-  const tagSelect = controls.elements.tag;
-  const yearSelect = controls.elements.year;
-  const perPageSelect = controls.elements.perPage;
-
-  let state = { tag: "", year: "", perPage: 12, page: 1 };
-  let filteredPhotos = [];
-  let activeModalIndex = -1;
-
+const tagSelect = controls.elements.tag;
+const yearSelect = controls.elements.year;
+const arrangeSelect = controls.elements.arrange;
+const perPageSelect = controls.elements.perPage;
+  
+let state = {
+  tag: "",
+  year: "",
+  arrange: "newest",
+  perPage: 12,
+  page: 1
+};
+  
   function normalizePhoto(photo, index) {
     return {
       src: String(photo.src || ""),
@@ -40,12 +45,35 @@
       alt: String(photo.alt || photo.title || `Photograph ${index + 1}`),
       title: String(photo.title || `Photograph ${index + 1}`),
       year: Number(photo.year) || "",
-      tags: Array.isArray(photo.tags) ? photo.tags.map(String) : [],
-      description: String(photo.description || "")
-    };
+      date: String(photo.date || ""),
+      tags: Array.isArray(photo.tags)
+        ? photo.tags.map(String)
+        : [],
+      description: String(photo.description || ""),
+      originalIndex: index    };
   }
 
   const photos = library.map(normalizePhoto).filter((photo) => photo.src);
+
+  function getPhotoTimestamp(photo) {
+  if (photo.date) {
+    const timestamp = Date.parse(photo.date);
+
+    if (!Number.isNaN(timestamp)) {
+      return timestamp;
+    }
+  }
+
+  if (photo.year) {
+    return new Date(
+      Number(photo.year),
+      0,
+      1
+    ).getTime();
+  }
+
+  return 0;
+}
 
   function buildFilterOptions() {
     const tags = [...new Set(photos.flatMap((photo) => photo.tags))]
@@ -68,18 +96,27 @@
     });
   }
 
-  function syncControls() {
-    tagSelect.value = state.tag;
-    yearSelect.value = state.year;
-    perPageSelect.value = String(state.perPage);
-  }
+function syncControls() {
+  tagSelect.value = state.tag;
+  yearSelect.value = state.year;
+  arrangeSelect.value = state.arrange;
+  perPageSelect.value = String(
+    state.perPage
+  );
+}
 
   function readUrlState() {
     const parameters = new URLSearchParams(window.location.search);
-    const tag = parameters.get("tag") || "";
-    const year = parameters.get("year") || "";
-    const perPage = Number(parameters.get("perPage"));
-    const page = Number(parameters.get("page"));
+const tag = parameters.get("tag") || "";
+const year = parameters.get("year") || "";
+const arrange =
+  parameters.get("arrange") || "newest";
+const perPage = Number(
+  parameters.get("perPage")
+);
+const page = Number(
+  parameters.get("page")
+);
 
     state.tag = [...tagSelect.options].some((option) => option.value === tag)
       ? tag
@@ -87,6 +124,12 @@
     state.year = [...yearSelect.options].some((option) => option.value === year)
       ? year
       : "";
+    state.arrange = [
+  "newest",
+  "oldest"
+].includes(arrange)
+  ? arrange
+  : "newest";
     state.perPage = [6, 12, 24, 48, 96].includes(perPage) ? perPage : 12;
     state.page = Number.isInteger(page) && page > 0 ? page : 1;
     syncControls();
@@ -96,6 +139,12 @@
     const parameters = new URLSearchParams();
     if (state.tag) parameters.set("tag", state.tag);
     if (state.year) parameters.set("year", state.year);
+if (state.arrange !== "newest") {
+  parameters.set(
+    "arrange",
+    state.arrange
+  );
+}
     if (state.perPage !== 12) parameters.set("perPage", String(state.perPage));
     if (state.page !== 1) parameters.set("page", String(state.page));
 
@@ -107,21 +156,58 @@
     );
   }
 
-  function applyFilters() {
-    filteredPhotos = photos.filter((photo) => {
-      const matchesTag = !state.tag || photo.tags.includes(state.tag);
-      const matchesYear = !state.year || String(photo.year) === state.year;
+function applyFilters() {
+  filteredPhotos = photos
+    .filter((photo) => {
+      const matchesTag =
+        !state.tag ||
+        photo.tags.includes(state.tag);
+
+      const matchesYear =
+        !state.year ||
+        String(photo.year) === state.year;
+
       return matchesTag && matchesYear;
+    })
+    .sort((photoA, photoB) => {
+      const dateA =
+        getPhotoTimestamp(photoA);
+
+      const dateB =
+        getPhotoTimestamp(photoB);
+
+      if (dateA !== dateB) {
+        return state.arrange === "oldest"
+          ? dateA - dateB
+          : dateB - dateA;
+      }
+
+      /*
+        When two images have the same date,
+        preserve their order from photos-data.js.
+      */
+      return photoA.originalIndex -
+        photoB.originalIndex;
     });
 
-    const pageCount = Math.max(1, Math.ceil(filteredPhotos.length / state.perPage));
-    state.page = Math.min(state.page, pageCount);
+  const pageCount = Math.max(
+    1,
+    Math.ceil(
+      filteredPhotos.length /
+      state.perPage
+    )
+  );
 
-    renderGrid();
-    renderPagination(pageCount);
-    renderSummary(pageCount);
-    updateUrl();
-  }
+  state.page = Math.min(
+    state.page,
+    pageCount
+  );
+
+  renderGrid();
+  renderPagination(pageCount);
+  renderSummary(pageCount);
+  updateUrl();
+}
 
   function renderGrid() {
     grid.replaceChildren();
@@ -313,16 +399,26 @@
     openModal(activeModalIndex);
   }
 
-  controls.addEventListener("change", () => {
-    state.tag = tagSelect.value;
-    state.year = yearSelect.value;
-    state.perPage = Number(perPageSelect.value);
-    state.page = 1;
-    applyFilters();
-  });
+controls.addEventListener("change", () => {
+  state.tag = tagSelect.value;
+  state.year = yearSelect.value;
+  state.arrange = arrangeSelect.value;
+  state.perPage = Number(
+    perPageSelect.value
+  );
+  state.page = 1;
+
+  applyFilters();
+});
 
   resetButton?.addEventListener("click", () => {
-    state = { tag: "", year: "", perPage: 12, page: 1 };
+state = {
+  tag: "",
+  year: "",
+  arrange: "newest",
+  perPage: 12,
+  page: 1
+};
     syncControls();
     applyFilters();
   });
