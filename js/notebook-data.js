@@ -1,5 +1,35 @@
 window.NOTEBOOK_LIBRARY=[
-{url:"blog/2026-07-21-about-the-fox.html",title:"About the fox",date:"2026-07-21",year:2026,tags:["Field Notes","Wildlife","Fox & Timber"],excerpt:"The small roadside encounter that quietly became part of a much larger creative story.",hero:"img/blog/2026-07-21-001.jpeg",alt:"A fox standing near a quiet roadside",readingTime:"Short read",searchText:"fox scout wildlife roadside encounter company creative story"},
-{url:"blog/2026-07-18-living-between-destinations.html",title:"Living between destinations",date:"2026-07-18",year:2026,tags:["Life Outside","Horizon","Travel"],excerpt:"What home looks like when it has four wheels, a worn map, and a changing view.",hero:"img/blog/2026-07-18-001.jpeg",alt:"Horizon parked beside a remote forest road",readingTime:"Medium read",searchText:"home vehicle horizon travel road mobile living destinations camp"},
-{url:"blog/2026-07-12-why-i-keep-building-ideas.html",title:"Why I keep building ideas",date:"2026-07-12",year:2026,tags:["Making Things","Design","Creativity"],excerpt:"A notebook entry about design, unfinished projects, curiosity, and making things tangible.",hero:"img/blog/2026-07-12-001.jpeg",alt:"Sketches, notes, and design materials on a work surface",readingTime:"Long read",searchText:"design unfinished projects curiosity ideas making creativity building tangible"}
+{url:"blog/2026-07-21-about-the-fox.html",
+ title:"About the fox",
+ date:"2026-07-21",
+ year:2026,
+ tags:["Field Notes","Wildlife","Fox & Timber"],
+ excerpt:"The small roadside encounter that quietly became part of a much larger creative story.",
+ hero:"img/blog/2026-07-21-001.jpeg",
+ alt:"A fox standing near a quiet roadside",
+ readingTime:"Short read",
+ searchText:"fox scout wildlife roadside encounter company creative story"
+},
+{url:"blog/2026-07-18-living-between-destinations.html",
+ title:"Living between destinations",
+ date:"2026-07-18",
+ year:2026,
+ tags:["Life Outside","Horizon","Travel"],
+ excerpt:"What home looks like when it has four wheels, a worn map, and a changing view.",
+ hero:"img/blog/2026-07-18-001.jpeg",
+ alt:"Horizon parked beside a remote forest road",
+ readingTime:"Medium read",
+ searchText:"home vehicle horizon travel road mobile living destinations camp"
+},
+{url:"blog/2026-07-12-why-i-keep-building-ideas.html",
+ title:"Why I keep building ideas",
+ date:"2026-07-12",
+ year:2026,
+ tags:["Making Things","Design","Creativity"],
+ excerpt:"A notebook entry about design, unfinished projects, curiosity, and making things tangible.",
+ hero:"img/blog/2026-07-12-001.jpeg",
+ alt:"Sketches, notes, and design materials on a work surface",
+ readingTime:"Long read",
+ searchText:"design unfinished projects curiosity ideas making creativity building tangible"
+}
 ];
