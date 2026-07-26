@@ -756,18 +756,26 @@ code{font-family:'SFMono-Regular',Consolas,monospace}
 
 @media(min-width:1050px){
   html{scroll-padding-top:calc(var(--nav-h) + 1rem);}
-  body{padding-left:0;}
-  .site-header{
-    position:sticky;
-    inset:auto;
-    top:0;
-    width:100%;
-    height:var(--nav-h);
-    border-right:0;
-    border-bottom:1px solid var(--line);
-    background:color-mix(in srgb,var(--bg) 92%,transparent);
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
+  body{
+    padding-left:0;
+    padding-top: var(--nav-h);
+      }
+  .site-header {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 1000;
+    width: 100%;
+    height: var(--nav-h);
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    background:
+      color-mix(
+        in srgb,
+        var(--bg) 92%,
+        transparent
+      );
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
   }
   .signature-h{max-width:800px;}
 .menu-toggle {
