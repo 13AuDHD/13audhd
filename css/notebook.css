@@ -49,6 +49,7 @@ body.notebook-modal-open{overflow:hidden}
 .post-signature {
   width: min(22rem, 62vw);
   max-height: 9rem;
+  margin-left: -3rem;
   object-fit: contain;
   object-position: left center;
 }
