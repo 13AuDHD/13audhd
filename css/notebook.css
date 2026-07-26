@@ -35,8 +35,23 @@ body.notebook-modal-open{overflow:hidden}
 .notebook-entry .large-text{margin-block:2.5rem;font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(2rem,5vw,3.7rem);line-height:1.05}
 .notebook-entry-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--line)}
 .notebook-entry-actions button{font:inherit}
-.post-signoff{display:flex;align-items:center;gap:.6rem;margin-top:2rem}
-.post-signoff i{font-size:2rem}
-.post-signature{width:min(16rem,45vw);max-height:3.5rem;object-fit:contain;object-position:left center}
+.post-signoff {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 3rem;
+}
+
+.post-signoff i {
+  color: var(--accent);
+  font-size: 2.4rem;
+}
+
+.post-signature {
+  width: min(22rem, 62vw);
+  max-height: 6rem;
+  object-fit: contain;
+  object-position: left center;
+}
 @media(min-width:760px){.notebook-archive__intro{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:end}.notebook-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.notebook-controls__search,.notebook-controls__reset{grid-column:1/-1}.notebook-results-bar{flex-direction:row;justify-content:space-between}}
 @media(min-width:1050px){.notebook-controls{grid-template-columns:minmax(15rem,1.4fr) minmax(8rem,.75fr) minmax(8rem,.7fr) minmax(9rem,.8fr) minmax(7rem,.6fr) auto}.notebook-controls__search,.notebook-controls__reset{grid-column:auto}}
