@@ -1,3 +1,4 @@
+window.NOTEBOOK_BASE = "/13audhd-2/";
 window.NOTEBOOK_LIBRARY=[
 {url:"blog/2026-07-21-about-the-fox.html",
  title:"About the fox",
