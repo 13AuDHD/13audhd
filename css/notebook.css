@@ -46,10 +46,9 @@ body.notebook-modal-open{overflow:hidden}
 .post-signoff i {
   position: absolute;
   left: 0.2rem;
-  bottom: 0.8rem;
+  bottom: 0.5rem;
   z-index: 1;
-  color: var(--accent);
-  font-size: 2.6rem;
+  font-size: 1.5rem;
   line-height: 1;
 }
 
