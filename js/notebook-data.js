@@ -1,5 +1,5 @@
 window.NOTEBOOK_LIBRARY=[
-{url:"../blog/2026-07-21-about-the-fox.html",
+{url:"blog/2026-07-21-about-the-fox.html",
  title:"About the fox",
  date:"2026-07-21",
  year:2026,
