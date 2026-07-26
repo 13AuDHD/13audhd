@@ -58,7 +58,7 @@ body.notebook-modal-open{overflow:hidden}
   display: block;
   width: 100%;
   max-height: 7rem;
-  margin-left: 1.75rem;
+  margin-left: 0.75rem;
   object-fit: contain;
   object-position: left center;
 }
