@@ -1,276 +1,49 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
-  <head>
-    <meta charset="utf-8">
-
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    >
-
-    <meta
-      name="description"
-      content="Personal website of Thirteen Nebula."
-    >
-
-    <title>Notebook | Thirteen Nebula</title>
-
-    <link rel="stylesheet" href="css/styles.css">
-
-    <script src="js/scripts.js" defer></script>
-  </head>
-
-  <body>
-    <a class="skip-link" href="#main">
-      Skip to content
-    </a>
-
-    <div data-include="includes/header.htm"></div>
-
-    <main id="main">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Notebook entries by Thirteen Nebula.">
+<title>Notebook | Thirteen Nebula</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/notebook.css">
+<script src="js/scripts.js" defer></script>
+<script src="js/notebook-data.js" defer></script>
+<script src="js/notebook.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div data-include="includes/header.htm"></div>
+<main id="main">
 <header class="page-hero page-hero--image">
-  <img
-    class="page-hero__media"
-    src="img/blog-hero.jpg"
-    alt="Notebook and field notes by Thirteen Nebula"
-  >
-
-  <div class="shell page-hero__copy">
-    <p class="eyebrow">Notebook</p>
-
-    <h1 class="display">
-      What I noticed along the way.
-    </h1>
-
-    <p class="lede">
-      Stories, field notes, thoughts, technical projects, and whatever
-      else refused to stay inside my head.
-    </p>
-  </div>
+<img class="page-hero__media" src="img/blog-hero.jpg" alt="Notebook and field notes by Thirteen Nebula">
+<div class="shell page-hero__copy">
+<p class="eyebrow">Notebook</p>
+<h1 class="display">What I noticed along the way.</h1>
+<p class="lede">Stories, field notes, technical projects, and whatever else refused to stay inside my head.</p>
+</div>
 </header>
-
-      <section class="section">
-        <div class="shell">
-          <form class="filters" data-blog-filters>
-            <div class="field">
-              <label for="q">
-                Search
-              </label>
-
-              <input
-                id="q"
-                name="q"
-                type="search"
-                placeholder="Search title and content"
-              >
-            </div>
-
-            <div class="field">
-              <label for="sort">
-                Date
-              </label>
-
-              <select id="sort" name="sort">
-                <option value="newest">
-                  Newest first
-                </option>
-
-                <option value="oldest">
-                  Oldest first
-                </option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label for="category">
-                Category
-              </label>
-
-              <select id="category" name="category">
-                <option value="">
-                  All categories
-                </option>
-
-                <option>
-                  Field Notes
-                </option>
-
-                <option>
-                  Life Outside
-                </option>
-
-                <option>
-                  Making Things
-                </option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label for="length">
-                Reading length
-              </label>
-
-              <select id="length" name="length">
-                <option value="">
-                  Any length
-                </option>
-
-                <option value="short">
-                  Short
-                </option>
-
-                <option value="medium">
-                  Medium
-                </option>
-
-                <option value="long">
-                  Long
-                </option>
-              </select>
-            </div>
-          </form>
-
-          <div class="post-grid" data-post-grid>
-            <a
-              class="post-card"
-              data-post-card
-              data-date="2026-07-21"
-              data-category="Field Notes"
-              data-length="short"
-              data-title="About the fox"
-              data-content="The small roadside encounter that quietly became part of a much larger creative story."
-              href="2026-07-21-About-the-fox.html"
-            >
-              <img
-                src="img/blog/blog-01.svg"
-                alt="About the fox"
-                loading="lazy"
-              >
-
-              <div class="post-card__body">
-                <div class="post-meta">
-                  <span>Field Notes</span>
-                  <span>Short read</span>
-                  <span>2026-07-21</span>
-                </div>
-
-                <h3>
-                  About the fox
-                </h3>
-
-                <p>
-                  The small roadside encounter that quietly became part
-                  of a much larger creative story.
-                </p>
-              </div>
-            </a>
-
-            <a
-              class="post-card"
-              data-post-card
-              data-date="2026-07-18"
-              data-category="Life Outside"
-              data-length="medium"
-              data-title="Living between destinations"
-              data-content="What home looks like when it has four wheels, a worn map, and a changing view."
-              href="2026-07-18-Living-between-destinations.html"
-            >
-              <img
-                src="img/blog/blog-02.svg"
-                alt="Living between destinations"
-                loading="lazy"
-              >
-
-              <div class="post-card__body">
-                <div class="post-meta">
-                  <span>Life Outside</span>
-                  <span>Medium read</span>
-                  <span>2026-07-18</span>
-                </div>
-
-                <h3>
-                  Living between destinations
-                </h3>
-
-                <p>
-                  What home looks like when it has four wheels, a worn
-                  map, and a changing view.
-                </p>
-              </div>
-            </a>
-
-            <a
-              class="post-card"
-              data-post-card
-              data-date="2026-07-12"
-              data-category="Making Things"
-              data-length="long"
-              data-title="Why I keep building ideas"
-              data-content="A notebook entry about design, unfinished projects, curiosity, and making things tangible."
-              href="2026-07-12-Why-I-keep-building-ideas.html"
-            >
-              <img
-                src="img/blog/blog-03.svg"
-                alt="Why I keep building ideas"
-                loading="lazy"
-              >
-
-              <div class="post-card__body">
-                <div class="post-meta">
-                  <span>Making Things</span>
-                  <span>Long read</span>
-                  <span>2026-07-12</span>
-                </div>
-
-                <h3>
-                  Why I keep building ideas
-                </h3>
-
-                <p>
-                  A notebook entry about design, unfinished projects,
-                  curiosity, and making things tangible.
-                </p>
-              </div>
-            </a>
-
-            <a
-              class="post-card"
-              data-post-card
-              data-date="2026-06-28"
-              data-category="Field Notes"
-              data-length="medium"
-              data-title="A quiet road after rain"
-              data-content="Notes from a forest road, with mud on the tires and nowhere urgent to be."
-              href="2026-06-28-A-quiet-road-after-rain.html"
-            >
-              <img
-                src="img/blog/blog-04.svg"
-                alt="A quiet road after rain"
-                loading="lazy"
-              >
-
-              <div class="post-card__body">
-                <div class="post-meta">
-                  <span>Field Notes</span>
-                  <span>Medium read</span>
-                  <span>2026-06-28</span>
-                </div>
-
-                <h3>
-                  A quiet road after rain
-                </h3>
-
-                <p>
-                  Notes from a forest road, with mud on the tires and
-                  nowhere urgent to be.
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <div data-include="includes/footer.htm"></div>
-  </body>
+<section class="section notebook-archive">
+<div class="shell">
+<div class="notebook-archive__intro">
+<div><p class="eyebrow">The archive</p><h2 class="section-title">A growing record of the road.</h2></div>
+<p class="lede">Search the notebook as you type, or narrow the archive by tag, year, date order, and entries per page.</p>
+</div>
+<form class="notebook-controls" data-notebook-controls aria-label="Notebook filters">
+<div class="field notebook-controls__search"><label for="notebook-search">Search</label><input id="notebook-search" name="query" type="search" placeholder="Search notebook entries" autocomplete="off"></div>
+<div class="field"><label for="notebook-tag">Tag</label><select id="notebook-tag" name="tag"><option value="">All tags</option></select></div>
+<div class="field"><label for="notebook-year">Year</label><select id="notebook-year" name="year"><option value="">All years</option></select></div>
+<div class="field"><label for="notebook-arrange">Arrange</label><select id="notebook-arrange" name="arrange"><option value="newest" selected>Newest first</option><option value="oldest">Oldest first</option></select></div>
+<div class="field"><label for="notebook-per-page">Per page</label><select id="notebook-per-page" name="perPage"><option value="6" selected>6</option><option value="12">12</option><option value="24">24</option></select></div>
+<button class="button notebook-controls__reset" type="button" data-notebook-reset>Reset filters <i class="fa-solid fa-rotate-left" aria-hidden="true"></i></button>
+</form>
+<div class="notebook-results-bar" aria-live="polite"><p data-notebook-summary>Loading entries…</p><p data-notebook-page-summary></p></div>
+<div class="post-grid notebook-grid" data-notebook-grid aria-live="polite"></div>
+<div class="notebook-empty" data-notebook-empty hidden><i class="fa-regular fa-note-sticky" aria-hidden="true"></i><h3>No entries found.</h3><p>Try a different word, tag, year, or arrangement.</p></div>
+<nav class="notebook-pagination" data-notebook-pagination aria-label="Notebook pages"></nav>
+</div>
+</section>
+</main>
+<div data-include="includes/footer.htm"></div>
+</body>
 </html>
