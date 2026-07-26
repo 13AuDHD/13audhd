@@ -286,8 +286,6 @@ button,input,select{font:inherit}.shell{width:min(100% - 2rem,78rem);margin-inli
   margin-top:2rem;
 }
 .article-body .post-signature {
-  width: min(13rem, 45vw);
-  margin: -2rem;
   border-radius: 0;
 }
 .page-hero {
