@@ -1,13 +1,13 @@
 window.NOTEBOOK_BASE = "/13audhd-2/";
 window.NOTEBOOK_LIBRARY=[
-{url:"blog/2026-07-21-about-the-fox.html",
+{url:"blog/2026-07-25-about-the-fox.html",
  title:"About the fox",
- date:"2026-07-21",
+ date:"2026-07-25",
  year:2026,
  tags:["Field Notes","Wildlife","Fox & Timber"],
  excerpt:"The small roadside encounter that quietly became part of a much larger creative story.",
- hero:"img/blog/2026-07-21-001.jpeg",
- alt:"A fox standing near a quiet roadside",
+ hero:"img/blog/2026-07-25-001.jpeg",
+ alt:"A fox standing near a quiet campsite",
  readingTime:"Short read",
  searchText:"fox scout wildlife roadside encounter company creative story"
 },
