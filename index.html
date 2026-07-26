@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="Personal website of Thirteen Nebula.">
     <title>Thirteen Nebula</title>
+    <link rel="stylesheet" href="css/notebook.css">
     <link rel="stylesheet" href="css/styles.css">
     
+    <script src="js/notebook-data.js" defer></script>
+    <script src="js/notebook-home.js" defer></script>
     <script src="js/photos-data.js" defer></script>
     <script src="js/design-data.js" defer></script>
     <script src="js/home-archive.js" defer></script>
     <script src="js/scripts.js" defer></script>
   </head>
+  <dialog class="notebook-modal" data-notebook-modal aria-label="Notebook entry">
+    <div class="notebook-modal__shell">
+      <button class="notebook-modal__close" type="button" data-notebook-modal-close aria-label="Close entry"><i class="fa-solid fa-xmark"></i></button>
+      <div class="notebook-modal__content" data-notebook-modal-content></div>
+    </div>
+  </dialog>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <div data-include="includes/header.htm"></div>
