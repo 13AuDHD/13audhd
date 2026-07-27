@@ -1,13 +1,4 @@
-// const $=(s,c=document)=>c.querySelector(s);const $$=(s,c=document)=>[...c.querySelectorAll(s)];
-// const body=document.body,toggle=$('[data-menu-toggle]'),closeBtn=$('[data-menu-close]');
-// function setMenu(open){body.classList.toggle('menu-open',open);toggle?.setAttribute('aria-expanded',String(open));}
-// toggle?.addEventListener('click',()=>setMenu(!body.classList.contains('menu-open')));closeBtn?.addEventListener('click',()=>setMenu(false));$$('.nav-links a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
-// const root=document.documentElement,themeButtons=$$('[data-theme-toggle]');
-// function applyTheme(theme){root.dataset.theme=theme;localStorage.setItem('theme',theme);themeButtons.forEach(b=>{b.innerHTML=theme==='light'?'<i class="fa-solid fa-moon"></i>':'<i class="fa-solid fa-lightbulb"></i>';b.setAttribute('aria-label',theme==='light'?'Use dark theme':'Use light theme')})}
-// applyTheme(localStorage.getItem('theme')||'dark');themeButtons.forEach(b=>b.addEventListener('click',()=>applyTheme(root.dataset.theme==='light'?'dark':'light')));
-// $$('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
-// const stats=$$('[data-count]');if(stats.length){const obs=new IntersectionObserver(entries=>entries.forEach(entry=>{if(!entry.isIntersecting||entry.target.dataset.done)return;entry.target.dataset.done='1';entry.target.classList.add('is-visible');const out=$('[data-count-output]',entry.target),target=Number(entry.target.dataset.count),suffix=entry.target.dataset.suffix||'',start=performance.now(),duration=2200;function frame(now){const p=Math.min((now-start)/duration,1),e=1-Math.pow(1-p,4);out.textContent=Math.round(target*e).toLocaleString()+suffix;if(p<1)requestAnimationFrame(frame)}requestAnimationFrame(frame)}),{threshold:.35});stats.forEach(s=>obs.observe(s))}
-// const filterForm=$('[data-blog-filters]');if(filterForm){const cards=$$('[data-post-card]');function run(){const q=$('[name=q]',filterForm).value.trim().toLowerCase(),cat=$('[name=category]',filterForm).value,len=$('[name=length]',filterForm).value,sort=$('[name=sort]',filterForm).value;cards.forEach(c=>{const hay=(c.dataset.title+' '+c.dataset.content).toLowerCase();c.hidden=!( (!q||hay.includes(q))&&(!cat||c.dataset.category===cat)&&(!len||c.dataset.length===len) )});const grid=$('[data-post-grid]');[...cards].sort((a,b)=>sort==='oldest'?a.dataset.date.localeCompare(b.dataset.date):b.dataset.date.localeCompare(a.dataset.date)).forEach(c=>grid.append(c))}filterForm.addEventListener('input',run);run()}
+
 const $ = (selector, context = document) =>
   context.querySelector(selector);
 
