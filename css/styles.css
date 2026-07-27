@@ -244,8 +244,6 @@ button,input,select{font:inherit}.shell{width:min(100% - 2rem,78rem);margin-inli
 .socials a:focus-visible {
   color: var(--accent);
 }
-.socials{display:flex;flex-wrap:wrap;gap:.45rem}
-.nav-close{position:absolute;right:1.25rem;top:1.25rem}
 .hero{min-height:100svh;display:grid;align-items:end;position:relative;isolation:isolate}
 .hero__media{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover}
 .hero::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(5,8,15,.96),rgba(5,8,15,.34) 55%,rgba(5,8,15,.12)),linear-gradient(to right,rgba(5,8,15,.55),transparent 70%)}
@@ -343,17 +341,7 @@ button,input,select{font:inherit}.shell{width:min(100% - 2rem,78rem);margin-inli
 .post-meta span{padding:.25rem .55rem;border:1px solid var(--line);border-radius:999px}
 .post-card h3{margin:0 0 .6rem;font-family:'Cormorant Garamond',Georgia,serif;font-size:2.1rem;line-height:1}
 .post-card p{margin:0;color:var(--muted)}
-.post-signoff {
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  margin-top: -1rem;
-}
-.post-signoff i {
-  flex: 0 0 auto;
-  font-size: 2.25rem;
-  margin-top:2rem;
-}
+
 .article-body .post-signature {
   border-radius: 0;
 }
