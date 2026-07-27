@@ -8,7 +8,7 @@ window.NOTEBOOK_LIBRARY=[
  excerpt:"The small roadside encounter that quietly became part of a much larger creative story.",
  hero:"img/blog/2026-07-25-001.jpeg",
  alt:"A fox standing near a quiet campsite",
- readingTime:"Short read",
+ readingTime:"Short",
  searchText:"fox scout wildlife roadside encounter company creative story"
 },
 {url:"blog/2026-07-18-living-between-destinations.html",
@@ -19,7 +19,7 @@ window.NOTEBOOK_LIBRARY=[
  excerpt:"What home looks like when it has four wheels, a worn map, and a changing view.",
  hero:"img/blog/2026-07-18-001.jpeg",
  alt:"Horizon parked beside a remote forest road",
- readingTime:"Medium read",
+ readingTime:"Long",
  searchText:"home vehicle horizon travel road mobile living destinations camp"
 },
 {url:"blog/2026-07-12-why-i-keep-building-ideas.html",
@@ -30,7 +30,19 @@ window.NOTEBOOK_LIBRARY=[
  excerpt:"A notebook entry about design, unfinished projects, curiosity, and making things tangible.",
  hero:"img/blog/2026-07-12-001.jpeg",
  alt:"Sketches, notes, and design materials on a work surface",
- readingTime:"Long read",
+ readingTime:"Long",
  searchText:"design unfinished projects curiosity ideas making creativity building tangible"
+},
+{
+  url:"blog/2025-11-02-perfectionism-and-audhd.html",
+  title:"The Beautiful Exhaustion: Living with Perfectionism and AuDHD",
+  date:"2025-11-02",
+  year:2025,
+  tags: ["AuDHD","Perfectionism","Neurodiversity","Autism","ADHD"],
+  excerpt:"A personal reflection on the beautiful exhaustion of perfectionism with autism and ADHD, and learning when something needs to be perfect versus simply done.",
+  hero:"img/blog/2025-11-02-001.jpeg",
+  alt:"A quiet, contemplative scene representing perfectionism and AuDHD",
+  readingTime:"Medium",
+  searchText:"audhd perfectionism neurodiversity autism adhd hyperfocus executive dysfunction anxiety burnout exhaustion impossible standards good enough"
 }
 ];
