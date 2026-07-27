@@ -700,22 +700,37 @@ code{font-family:'SFMono-Regular',Consolas,monospace}
   object-position: left center;
 }
 
-.footer-links {
+.footer-navigation {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.65rem;
-  align-content: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 8vw, 5rem);
 }
 
-.footer-links a {
+.footer-link-group h2 {
+  margin: 0 0 1rem;
+  color: var(--text);
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+  font-size: 1.65rem;
+  font-weight: 500;
+}
+
+.footer-link-group nav {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.footer-link-group a {
   display: block;
   width: fit-content;
   color: var(--muted);
   text-decoration: none;
 }
 
-.footer-links a:hover,
-.footer-links a:focus-visible {
+.footer-link-group a:hover,
+.footer-link-group a:focus-visible {
   color: var(--accent);
 }
 
@@ -726,13 +741,29 @@ code{font-family:'SFMono-Regular',Consolas,monospace}
 }
 
 .site-footer .socials {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .copyright {
+  max-width: calc(100% - 5.5rem);
   margin: 0;
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+
+@media(max-width:420px) {
+  .footer-navigation {
+    gap: 1.25rem;
+  }
+
+  .footer-link-group h2 {
+    font-size: 1.4rem;
+  }
+
+  .footer-link-group a {
+    font-size: 0.9rem;
+  }
 }
 
 
@@ -749,8 +780,24 @@ code{font-family:'SFMono-Regular',Consolas,monospace}
   .horizon-photo-break__grid,.horizon-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .horizon-photo--wide{grid-column:1/-1}.horizon-photo--tall{grid-row:span 2;min-height:45rem}
   .filters{grid-template-columns:2fr repeat(3,1fr);align-items:end}
-  .footer-grid {grid-template-columns: minmax(14rem, 1fr) minmax(16rem, 1fr);align-items: start;}
+
   .footer-brand {grid-column: 1 / -1;}
+    .footer-grid {
+    grid-template-columns:
+      minmax(14rem, 0.8fr)
+      minmax(24rem, 1.4fr);
+    align-items: start;
+  }
+
+  .footer-social {
+    grid-column: 1;
+  }
+
+  .copyright {
+    grid-column: 2;
+    max-width: none;
+    align-self: end;
+  }
 }
 
 
@@ -842,11 +889,19 @@ code{font-family:'SFMono-Regular',Consolas,monospace}
   .horizon-gallery-grid .horizon-photo--wide{grid-column:2/-1}
   .footer-grid {
     grid-template-columns:
-      minmax(15rem, 1.2fr)
-      minmax(10rem, 0.65fr)
-      minmax(18rem, 1fr);
-    align-items: start;
-    gap: clamp(2.5rem, 5vw, 5rem);
+      minmax(16rem, 0.8fr)
+      minmax(28rem, 1.4fr)
+      auto;
+  }
+
+  .footer-social {
+    grid-column: 3;
+  }
+
+  .copyright {
+    grid-column: 1 / -1;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
   }
   .footer-brand {grid-column: auto;}
 }
