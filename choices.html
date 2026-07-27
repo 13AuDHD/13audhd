@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <meta
+    name="description"
+    content="Manage privacy and browser-storage preferences for 13audhd.com."
+  >
+
+  <title>Your Privacy Choices | Thirteen Nebula</title>
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <script src="/js/scripts.js" defer></script>
+  <script src="/js/privacy-choices.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">
+    Skip to content
+  </a>
+
+  <div data-include="/includes/header.htm"></div>
+
+  <main id="main" class="policy-page">
+    <header class="policy-hero">
+      <div class="shell policy-hero__content">
+        <p class="eyebrow">Privacy</p>
+        <h1 class="policy-title">
+          Your Privacy Choices
+        </h1>
+
+        <p class="lede">
+          Decide which optional website features may use browser
+          storage or similar technologies.
+        </p>
+
+        <p class="policy-date">
+          Last updated July 26, 2026
+        </p>
+      </div>
+    </header>
+
+    <article class="policy-body">
+      <div class="policy-callout">
+        <p>
+          Regarding actual cookies, chocolate chip remains the
+          preferred variety. The controls below concern browser
+          storage and website technology.
+        </p>
+      </div>
+
+      <p>
+        The site currently uses only necessary and preference
+        storage. Analytics and advertising categories are included
+        so your choices are already established if those services
+        are introduced later.
+      </p>
+
+      <form data-privacy-form>
+        <div class="preference-list">
+          <section class="preference-card">
+            <div>
+              <h2>Necessary</h2>
+
+              <p>
+                Supports essential site behavior and security.
+                This category cannot be disabled through this page.
+              </p>
+            </div>
+
+            <label class="preference-toggle">
+              <span class="sr-only">
+                Necessary storage is always enabled
+              </span>
+
+              <input
+                type="checkbox"
+                checked
+                disabled
+              >
+
+              <span aria-hidden="true"></span>
+            </label>
+          </section>
+
+          <section class="preference-card">
+            <div>
+              <h2>Preferences</h2>
+
+              <p>
+                Remembers choices such as light or dark appearance
+                and privacy settings.
+              </p>
+            </div>
+
+            <label class="preference-toggle">
+              <span class="sr-only">
+                Allow preference storage
+              </span>
+
+              <input
+                type="checkbox"
+                name="preferences"
+                data-privacy-choice
+              >
+
+              <span aria-hidden="true"></span>
+            </label>
+          </section>
+
+          <section class="preference-card">
+            <div>
+              <h2>Analytics</h2>
+
+              <p>
+                Would permit anonymous or aggregated measurement
+                tools. No analytics service is currently active.
+              </p>
+            </div>
+
+            <label class="preference-toggle">
+              <span class="sr-only">
+                Allow analytics storage
+              </span>
+
+              <input
+                type="checkbox"
+                name="analytics"
+                data-privacy-choice
+              >
+
+              <span aria-hidden="true"></span>
+            </label>
+          </section>
+
+          <section class="preference-card">
+            <div>
+              <h2>Marketing</h2>
+
+              <p>
+                Would permit advertising or cross-site marketing
+                technology. No advertising service is currently
+                active.
+              </p>
+            </div>
+
+            <label class="preference-toggle">
+              <span class="sr-only">
+                Allow marketing storage
+              </span>
+
+              <input
+                type="checkbox"
+                name="marketing"
+                data-privacy-choice
+              >
+
+              <span aria-hidden="true"></span>
+            </label>
+          </section>
+        </div>
+
+        <div class="preference-actions">
+          <button
+            class="button"
+            type="submit"
+          >
+            Save my choices
+          </button>
+
+          <button
+            class="button"
+            type="button"
+            data-reject-optional
+          >
+            Reject optional
+          </button>
+
+          <button
+            class="button"
+            type="button"
+            data-accept-optional
+          >
+            Accept optional
+          </button>
+        </div>
+
+        <p
+          class="preference-status"
+          data-privacy-status
+          role="status"
+          aria-live="polite"
+        ></p>
+      </form>
+
+      <h2>Global Privacy Control</h2>
+
+      <p>
+        If your browser sends a Global Privacy Control signal,
+        analytics and marketing choices will remain disabled.
+        The status message above will indicate when that signal
+        has been detected.
+      </p>
+
+      <h2>Changing your mind</h2>
+
+      <p>
+        Return to this page at any time to change your selections.
+        You can also delete the site’s stored information through
+        your browser’s privacy or website-data settings.
+      </p>
+
+      <h2>Questions</h2>
+
+      <p>
+        Questions about these controls may be sent to
+        <a href="mailto:13audhd@gmail.com">
+          13audhd@gmail.com
+        </a>.
+      </p>
+    </article>
+  </main>
+
+  <div data-include="/includes/footer.htm"></div>
+</body>
+</html>
