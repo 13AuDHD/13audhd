@@ -185,89 +185,7 @@ function initializeStatistics() {
   statistics.forEach((statistic) => {
     observer.observe(statistic);
   });
-}
-
-function initializeBlogFilters() {
-  const filterForm = $("[data-blog-filters]");
-
-  if (!filterForm) {
-    return;
-  }
-
-  const cards = $$("[data-post-card]");
-  const grid = $("[data-post-grid]");
-
-  function filterPosts() {
-    const searchValue = $(
-      "[name=q]",
-      filterForm
-    ).value
-      .trim()
-      .toLowerCase();
-
-    const category = $(
-      "[name=category]",
-      filterForm
-    ).value;
-
-    const length = $(
-      "[name=length]",
-      filterForm
-    ).value;
-
-    const sort = $(
-      "[name=sort]",
-      filterForm
-    ).value;
-
-    cards.forEach((card) => {
-      const searchableText = (
-        `${card.dataset.title} ${card.dataset.content}`
-      ).toLowerCase();
-
-      const matchesSearch =
-        !searchValue ||
-        searchableText.includes(searchValue);
-
-      const matchesCategory =
-        !category ||
-        card.dataset.category === category;
-
-      const matchesLength =
-        !length ||
-        card.dataset.length === length;
-
-      card.hidden = !(
-        matchesSearch &&
-        matchesCategory &&
-        matchesLength
-      );
-    });
-
-    [...cards]
-      .sort((first, second) => {
-        if (sort === "oldest") {
-          return first.dataset.date.localeCompare(
-            second.dataset.date
-          );
-        }
-
-        return second.dataset.date.localeCompare(
-          first.dataset.date
-        );
-      })
-      .forEach((card) => {
-        grid.append(card);
-      });
-  }
-
-  filterForm.addEventListener(
-    "input",
-    filterPosts
-  );
-
-  filterPosts();
-}
+} 
 
 function initializeParallax() {
   const sections = $$("[data-parallax-section]");
@@ -403,7 +321,6 @@ async function initializeSite() {
   initializeTheme();
   initializeCopyright();
   initializeStatistics();
-  initializeBlogFilters();
   initializeParallax();
   initializeCardReveals();
 }
