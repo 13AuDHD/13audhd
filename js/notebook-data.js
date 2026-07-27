@@ -44,5 +44,17 @@ window.NOTEBOOK_LIBRARY=[
   alt:"A quiet, contemplative scene representing perfectionism and AuDHD",
   readingTime:"Medium",
   searchText:"audhd perfectionism neurodiversity autism adhd hyperfocus executive dysfunction anxiety burnout exhaustion impossible standards good enough"
+},
+ {
+  url:"blog/2025-10-08-my-story.html",
+  title:"Where do I begin? My story:",
+  date:"2025-10-08",
+  year:2025,
+  tags: ["Personal Story","AuDHD","Neurodiversity","Autism","Life Outside"],
+  excerpt:"An introductory story about my life, my late understanding of autism, ADHD, and Tourette’s, and the experiences that shaped the way I see and move through the world.",
+  hero:"img/blog/2025-10-08-001.jpeg",
+  alt:"Thirteen standing outdoors with mountains in the distance",
+  readingTime:"Medium",
+  searchText:"personal story audhd autism adhd tourettes neurodiversity masking childhood diagnosis sensory processing chronic pain truck life horizon"
 }
 ];
