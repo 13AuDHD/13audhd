@@ -7,12 +7,14 @@
     <title>Thirteen Nebula</title>
     <link rel="stylesheet" href="css/notebook.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home-gallery-modal.css">
     
     <script src="js/notebook-data.js" defer></script>
     <script src="js/notebook-home.js" defer></script>
     <script src="js/photos-data.js" defer></script>
     <script src="js/design-data.js" defer></script>
     <script src="js/home-archive.js" defer></script>
+    <script src="js/home-gallery-modal.js" defer></script>
     <script src="js/scripts.js" defer></script>
   </head>
 <dialog class="notebook-modal" data-notebook-modal aria-label="Notebook entry">
@@ -242,6 +244,88 @@
     </main>
     
     <div data-include="includes/footer.htm"></div>
+
+    <dialog
+  class="home-gallery-modal"
+  data-home-gallery-modal
+  aria-labelledby="home-gallery-modal-title"
+>
+  <div class="home-gallery-modal__frame">
+    <button
+      class="home-gallery-modal__close"
+      type="button"
+      data-home-gallery-modal-close
+      aria-label="Close image"
+    >
+      <i
+        class="fa-solid fa-xmark"
+        aria-hidden="true"
+      ></i>
+    </button>
+
+    <button
+      class="
+        home-gallery-modal__nav
+        home-gallery-modal__nav--previous
+      "
+      type="button"
+      data-home-gallery-previous
+      aria-label="Previous image"
+    >
+      <i
+        class="fa-solid fa-chevron-left"
+        aria-hidden="true"
+      ></i>
+    </button>
+
+    <figure class="home-gallery-modal__figure">
+      <img
+        class="home-gallery-modal__image"
+        data-home-gallery-modal-image
+        src=""
+        alt=""
+      >
+
+      <figcaption class="home-gallery-modal__caption">
+        <div>
+          <p
+            class="eyebrow"
+            data-home-gallery-modal-meta
+          ></p>
+
+          <h2
+            id="home-gallery-modal-title"
+            data-home-gallery-modal-title
+          ></h2>
+
+          <p
+            data-home-gallery-modal-description
+          ></p>
+        </div>
+
+        <div
+          class="home-gallery-modal__tags"
+          data-home-gallery-modal-tags
+        ></div>
+      </figcaption>
+    </figure>
+
+    <button
+      class="
+        home-gallery-modal__nav
+        home-gallery-modal__nav--next
+      "
+      type="button"
+      data-home-gallery-next
+      aria-label="Next image"
+    >
+      <i
+        class="fa-solid fa-chevron-right"
+        aria-hidden="true"
+      ></i>
+    </button>
+  </div>
+</dialog>
     
   </body>
 </html>
