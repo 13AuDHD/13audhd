@@ -32,8 +32,8 @@ window.PHOTO_LIBRARY = [
     thumb: "img/photos/thumbs/photo-001.jpeg",
     alt: "A mountain road beneath gathering clouds",
     title: "Weather Moving In",
-    date: "2026-04-24",
-    year: 2026,
+    date: "2025-04-24",
+    year: 2025,
     tags: ["Mountains", "Roads", "Weather"],
     description: "A quiet road in the San Juan Mountains just before the weather changed."
   },
@@ -72,7 +72,7 @@ window.PHOTO_LIBRARY = [
     thumb: "img/photos/thumbs/photo-005.jpeg",
     alt: "Rain falling across distant mountains",
     title: "Across the Valley",
-    date: "2024-07-13",
+    date: "2024-05-13",
     year: 2024,
     tags: ["Weather", "Mountains", "Rain"],
     description: "A curtain of rain moving through the distance."
@@ -92,8 +92,8 @@ window.PHOTO_LIBRARY = [
     thumb: "img/photos/thumbs/photo-007.jpeg",
     alt: "A camp chair overlooking a wide landscape",
     title: "No Urgent Destination",
-    date: "2025-07-04",
-    year: 2025,
+    date: "2024-05-16",
+    year: 2024,
     tags: ["Camping", "Landscape", "Quiet"],
     description: "A place to stop without needing a reason."
   },
@@ -146,5 +146,25 @@ window.PHOTO_LIBRARY = [
     year: 2023,
     tags: ["Night", "Camping", "Stars"],
     description: "The view after every other light disappeared."
+  },
+  {
+    src: "img/photos/photo-013.jpeg",
+    thumb: "img/photos/thumbs/photo-013.jpeg",
+    alt: "A campsite next to the river",
+    title: "Riverside",
+    date: "2026-07-04",
+    year: 2026,
+    tags: ["River", "Camping", "Horizon"],
+    description: "Horizon parked alongside a peaceful river."
+  },
+  {
+    src: "img/photos/photo-014.jpeg",
+    thumb: "img/photos/thumbs/photo-014.jpeg",
+    alt: "Wolf mural on the side of a quiet building",
+    title: "Camp After Dark",
+    date: "2024-10-27",
+    year: 2024,
+    tags: ["Mural", "City", "Sunset"],
+    description: "A wolf mural on the side of a building."
   }
 ];
