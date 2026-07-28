@@ -5,7 +5,7 @@ window.NOTEBOOK_LIBRARY=[
  date:"2026-07-28",
  year:2026,
  tags:["Notebook Update","Summer","Writing","Stories","Behind the Site"],
- excerpt"The Notebook is finally easier to update, and regular summer stories, field notes, and older memories are on the way.",
+ excerpt:"The Notebook is finally easier to update, and regular summer stories, field notes, and older memories are on the way.",
  hero:"img/blog/2026-07-28-001.jpeg",
  alt:"An open notebook and laptop at a summer mountain campsite",
  readingTime:"Short",
