@@ -1,6 +1,18 @@
 window.NOTEBOOK_BASE = "/";
 window.NOTEBOOK_LIBRARY=[
-{url:"blog/2026-07-25-about-the-fox.html",
+ 
+ {url:"blog/2026-07-28-the-notebook-is-open-again.html",
+  title:"The notebook is open again",
+  date:"2026-07-28",
+  year:2026,
+  tags:["Notebook Update","Summer","Writing","Stories","Behind the Site"],
+  excerpt"The Notebook is finally easier to update, and regular summer stories, field notes, and older memories are on the way.",
+  hero:"img/blog/2026-07-28-001.jpeg",
+  alt:"An open notebook and laptop at a summer mountain campsite",
+  readingTime:"Short",
+  searchText:"notebook update summer writing weekly stories blog website field notes old memories regular posts"
+ },
+ {url:"blog/2026-07-25-about-the-fox.html",
  title:"About the fox",
  date:"2026-07-25",
  year:2026,
