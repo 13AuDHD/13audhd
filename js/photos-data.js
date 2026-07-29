@@ -151,7 +151,7 @@ window.PHOTO_LIBRARY = [
     src: "img/photos/photo-013.jpeg",
     thumb: "img/photos/thumbs/photo-013.jpeg",
     alt: "A campsite next to the river",
-    title: "Riverside",
+    title: "Riverside Camping",
     date: "2026-07-04",
     year: 2026,
     tags: ["River", "Camping", "Horizon"],
@@ -161,10 +161,20 @@ window.PHOTO_LIBRARY = [
     src: "img/photos/photo-014.jpeg",
     thumb: "img/photos/thumbs/photo-014.jpeg",
     alt: "Wolf mural on the side of a quiet building",
-    title: "Camp After Dark",
+    title: "Wolf Mural",
     date: "2024-10-27",
     year: 2024,
     tags: ["Mural", "City", "Sunset"],
     description: "A wolf mural on the side of a building."
+  },
+    {
+    src: "img/photos/photo-015.jpeg",
+    thumb: "img/photos/thumbs/photo-015.jpeg",
+    alt: "Looking off a bridge down at a river",
+    title: "The Piedra River",
+    date: "2026-06-03",
+    year: 2026,
+    tags: ["Forest", "Nature", "River"],
+    description: "Looking off an old bridge at the Piedra River."
   }
 ];
