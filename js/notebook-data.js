@@ -1,5 +1,16 @@
 window.NOTEBOOK_BASE = "/";
 window.NOTEBOOK_LIBRARY=[
+ {url:"blog/2026-08-02-the-things-photographs-leave-out.html",
+  title:"The things photographs leave out",
+  date:"2026-08-02",
+  year:2026,
+  tags:["Life Outside","Photography","Horizon","Reality","Field Notes"],
+  excerpt:"The photographs are real, but they leave out the heat, repairs, mud, bills, laundry, spoiled food, and everything happening just outside the frame.",
+  hero:"img/blog/2026-08-02-001.jpeg",
+  alt:"Horizon parked at a beautiful mountain campsite",
+  readingTime:"Medium",
+  searchText:"photography life outside horizon heatwave durango vehicle living mud recovery repairs laundry executive dysfunction spoiled food bills camping reality outside the frame"
+ },
  {url:"blog/2026-07-28-the-notebook-is-open-again.html",
  title:"The notebook is open again",
  date:"2026-07-28",
