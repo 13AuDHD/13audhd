@@ -1,5 +1,18 @@
 window.NOTEBOOK_BASE = "/";
 window.NOTEBOOK_LIBRARY=[
+ /*
+ {url:"blog/2026-08-09-ai-helped-me-find-my-job.html",
+  title:"AI helped me find my job",
+  date:"2026-08-09",
+  year:2026,
+  tags:["Making Things","Artificial Intelligence","Fox & Timber","Work","Technology"],
+  excerpt:"I did not find AI because I wanted to replace work. I found it because I wanted to build things I could not build alone.",
+  hero:"img/blog/2026-08-09-001.jpeg",
+  alt:"A massive modern data center in the middle of a suburban neighborhood",
+  readingTime:"Long",
+  searchText:"artificial intelligence ai jobs employment fox and timber coffee company branding website coding data centers electricity water environment dependency accessibility creativity technology work"
+ },
+*/
  {url:"blog/2026-08-02-the-things-photographs-leave-out.html",
   title:"The things photographs leave out",
   date:"2026-08-02",
@@ -31,7 +44,7 @@ window.NOTEBOOK_LIBRARY=[
  hero:"img/blog/2026-07-25-001.jpeg",
  alt:"A fox standing near a quiet campsite",
  readingTime:"Short",
- searchText:"fox scout wildlife roadside encounter company creative story"
+ searchText:"fox scout wildlife roadside encounter company creative story photography"
 },
 {url:"blog/2026-07-18-living-between-destinations.html",
  title:"Living between destinations",
