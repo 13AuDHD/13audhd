@@ -893,6 +893,37 @@ code{font-family:'SFMono-Regular',Consolas,monospace}
   font-weight: 700;
 
 }
+/* Keep Notebook card content aligned
+   to the top-left beneath the image */
+
+.post-card__body,
+.notebook-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+}
+
+.post-card__body .entry-meta,
+.notebook-card__body .entry-meta {
+  width: 100%;
+}
+
+.post-card__body h3,
+.notebook-card__body h3 {
+  width: 100%;
+  text-align: left;
+}
+
+.post-card__body p,
+.notebook-card__body p {
+  width: 100%;
+  text-align: left;
+}
+
+
 .site-footer {
   padding-block: clamp(3rem, 7vw, 5rem);
   border-top: 1px solid var(--line);
