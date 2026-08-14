@@ -73,10 +73,11 @@ I am autistic, have ADHD and Tourette’s, and have spent most of my life trying
 
 | Project | What it is |
 |---|---|
+| **13audhd.me** | My custom link-in-bio page for adding to social media accounts |
 | **13audhd.com** | My personal website, photography archive, design portfolio, notebook, and record of life with Horizon |
 | **Fox & Timber** | A creative studio for branding, web design, visual identities, concepts, and business ideas |
 | **13Labs, LLC** | The umbrella for my creative, technical, and experimental projects |
-| **Autism Overland** | A developing project connecting neurodivergence, travel, outdoor access, and life outside |
+| **Llama Scout** | A developing project connecting neurodivergence, travel, outdoor access, and life outside |
 | **Orions Beats** | An electronic music and DJ project built around sample-heavy, genre-blending sound |
 
 ---
