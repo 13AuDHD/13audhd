@@ -1,40 +1,15 @@
 window.NOTEBOOK_BASE = "/";
 window.NOTEBOOK_LIBRARY=[
- /*{
-  url:
-    "blog/2026-08-16-apparently-im-building-a-llama-company-now.html",
-
-  title:
-    "Apparently I'm building a llama company now",
-
-  date:
-    "2026-08-16",
-
-  year:
-    2026,
-
-  tags: [
-    "Making Things",
-    "Llama Scout",
-    "AuDHD",
-    "Behind the Site",
-    "Fox & Timber"
-  ],
-
-  excerpt:
-    "AutismOverland was supposed to get an update. A couple of days later it had become Llama Scout, with a new identity, a working frontend, plans for memberships, merchandise, advertising, and an increasingly ridiculous number of things competing for my attention.",
-
-  hero:
-    "img/blog/2026-08-16-001.jpeg",
-
-  alt:
-    "Llama Scout branding and website development in progress",
-
-  readingTime:
-    "Medium",
-
-  searchText:
-    "llama scout autism overland audhd executive dysfunction fox and timber website frontend backend membership paywall pricing coupons merchandise stuffed weighted llama bandanna shirts hats storefront advertising social media doordash medication side effects making things"
+ /*{url:"blog/2026-08-16-apparently-im-building-a-llama-company-now.html",
+  title:"Apparently I'm building a llama company now",
+  date:"2026-08-16",
+  year:2026,
+  tags: ["Making Things","Llama Scout","AuDHD","Behind the Site","Fox & Timber"],
+  excerpt:"AutismOverland was supposed to get an update. A couple of days later it had become Llama Scout, with a new identity, and an increasingly ridiculous number of things competing for my attention.",
+  hero:"img/blog/2026-08-16-001.jpeg",
+  alt:"Llama Scout branding and website development in progress",
+  readingTime:"Medium",
+  searchText:"llama scout autism overland audhd executive dysfunction fox and timber website frontend backend membership paywall pricing coupons merchandise stuffed weighted llama bandanna shirts hats storefront advertising social media doordash medication side effects making things"
 },*/
  {url:"blog/2026-08-09-ai-helped-me-find-my-job.html",
   title:"AI helped me find my job",
