@@ -1,6 +1,6 @@
 window.NOTEBOOK_BASE = "/";
 window.NOTEBOOK_LIBRARY=[
- /*{url:"blog/2026-08-16-apparently-im-building-a-llama-company-now.html",
+ {url:"blog/2026-08-16-apparently-im-building-a-llama-company-now.html",
   title:"Apparently I'm building a llama company now",
   date:"2026-08-16",
   year:2026,
@@ -10,7 +10,7 @@ window.NOTEBOOK_LIBRARY=[
   alt:"Llama Scout branding and website development in progress",
   readingTime:"Medium",
   searchText:"llama scout autism overland audhd executive dysfunction fox and timber website frontend backend membership paywall pricing coupons merchandise stuffed weighted llama bandanna shirts hats storefront advertising social media doordash medication side effects making things"
-},*/
+},
  {url:"blog/2026-08-09-ai-helped-me-find-my-job.html",
   title:"AI helped me find my job",
   date:"2026-08-09",
