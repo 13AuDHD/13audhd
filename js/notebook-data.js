@@ -1,5 +1,16 @@
 window.NOTEBOOK_BASE = "/";
 window.NOTEBOOK_LIBRARY=[
+ {url:"blog/2026-09-30-i-got-distracted-building-a-llama.html",
+  title:"I didn't stop writing... I got distracted building a llama",
+  date:"2026-09-30",
+  year:2026,
+  tags:["Making Things","Llama Scout","AuDHD","Behind the Site"],
+  excerpt:"I disappeared from the Notebook for a few weeks. Mostly because Llama Scout went from a relatively simple campsite idea to an actual platform with scouts, reports, memberships, weather, moderation tools, and an absurd number of tiny details.",
+  hero:"img/blog/2026-08-16-004.jpeg",
+  alt:"Llama Scout website during development",
+  readingTime:"Medium",
+  searchText:"llama scout audhd making things behind the site campsite dispersed camping scouts scout training basecamp memberships reports weather connectivity moderation compare places compare reports badges knowledge base development website horizon projects executive functioning"
+},
  {url:"blog/2026-08-16-apparently-im-building-a-llama-company-now.html",
   title:"Apparently I'm building a llama company now",
   date:"2026-08-16",
